@@ -66,6 +66,12 @@ const WeatherWrapper = styled.div`
       error: false,
     };
     
+    handleInputChange = e => {
+      this.setState({
+        value: e.target.value,
+      })
+    }
+    
   }
 
   
