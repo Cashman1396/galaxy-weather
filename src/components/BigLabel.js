@@ -26,3 +26,4 @@ color: ${({ color }) => color || '#FFFFFF'};
       } 
     `;
 
+export default BigLabel
