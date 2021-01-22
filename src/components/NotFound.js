@@ -44,3 +44,5 @@ const NotFound = () => {
         </NotFoundWrap>
     )
 }
+
+export default NotFound;
