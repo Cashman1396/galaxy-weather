@@ -20,3 +20,11 @@ const NotFoundWrap = styled.div`
   border-radius: 10px;
   animation: ${ResultFadeIn} 0.5s 1.4s forwards;
 `;
+
+const NotfoundIcon = styled.span`
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+  margin-right: 10px;
+`;
