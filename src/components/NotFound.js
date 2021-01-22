@@ -21,10 +21,26 @@ const NotFoundWrap = styled.div`
   animation: ${ResultFadeIn} 0.5s 1.4s forwards;
 `;
 
-const NotfoundIcon = styled.span`
+const NotFoundIcon = styled.span`
   display: block;
   text-align: center;
   color: #ffffff;
   font-size: 40px;
   margin-right: 10px;
 `;
+
+const NotFoundText = styled.span`
+  color: #ffffff;
+  font-size: 17px;
+`;
+
+const NotFound = () => {
+    return (
+        <NotFoundWrap>
+            <NotFoundIcon>
+                <FontAwesomeIcon icon={faFrown} />
+            </NotFoundIcon>
+            <NotFoundText>The city could not be found, Please Try Again.</NotFoundText>
+        </NotFoundWrap>
+    )
+}
