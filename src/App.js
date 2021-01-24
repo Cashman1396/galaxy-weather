@@ -110,6 +110,8 @@ const WeatherWrapper = styled.div`
             'Friday',
             'Saturday'
           ]
+          const currentDate = new Date();
+          const date = `${day[currentDate.getDate()]} ${currentDate.getDate()} ${months[currentDate.getMonth()]}` 
         })
     }
     
