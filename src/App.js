@@ -145,6 +145,13 @@ const WeatherWrapper = styled.div`
           })
         })
     }
+
+    render() {
+      const { value, weatherInfo, error} = this.setState;
+      return (
+        <></>
+      )
+    }
     
   }
 
