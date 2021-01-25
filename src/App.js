@@ -132,6 +132,17 @@ const WeatherWrapper = styled.div`
             wind: data1.wind.speed,
             forecast: data2.list,
           }
+          this.setState({
+            weatherInfo,
+            error: false,
+          })
+        })
+        .catch(error => {
+          console.log(error);
+          this.setState({
+            error: true,
+            weatherInfo: null,
+          })
         })
     }
     
