@@ -34,4 +34,33 @@ const WeatherIcon = styled.img`
     height: 50px;
     width: 50px;
     margin: 0 auto;
-`
+`;
+
+const ForecastHour = props => {
+    const { temp, month, day, hour, icon } = props;
+    const iconUrl = `https://openweathermap.org/img/w/${icon}.png`
+
+    return (
+        <ForecastWrap>
+            <Text align="center">
+                {month}.{day}
+            </Text>
+            <Text align="center">{hour}:00</Text>
+            <WeatherIcon src={iconUrl} />
+            <SmallLabel align="center" weight="400">
+                {temp}&#176;
+            </SmallLabel>
+        </ForecastWrap>
+
+    );
+};
+
+ForecastHour.propTypes = {
+    temp: PropTypes.number.isRequired,
+    month: PropTypes.string.isRequired,
+    day: PropTypes.string.isRequired,
+    hour: PropTypes.number.isRequired,
+    icon: PropTypes.string.isRequired
+};
+
+export default ForecastHour;
