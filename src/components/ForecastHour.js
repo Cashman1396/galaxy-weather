@@ -28,3 +28,10 @@ flex-shrink: 0;
     flex-basis: 140px;
   }
 `;
+
+const WeatherIcon = styled.img`
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+`
