@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import SmallLabel from './SmallLabel'
 import Text from './Text'
-import mobile from '../Responsive/Mobile'
+import mobile from '../Responsive/mobile'
 
 const ForecastWrap = styled.div`
 flex-shrink: 0;
@@ -18,13 +18,13 @@ flex-shrink: 0;
   &:last-child {
     margin-right: 0;
   }
-  @media ${device.tablet} {
+  @media ${mobile.tablet} {
     flex-basis: 110px;
   }
-  @media ${device.laptop} {
+  @media ${mobile.laptop} {
     flex-basis: 125px;
   }
-  @media ${device.laptopL} {
+  @media ${mobile.laptopL} {
     flex-basis: 140px;
   }
 `;
