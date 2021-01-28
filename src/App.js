@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import mobile from './Responsive/Mobile'
+import Result from './components/Result';
+import SearchCity from './components/SearchCity';
+import NotFound from './components/NotFound';
 
 
 const AppTitle = styled.h1`
@@ -25,16 +29,16 @@ const AppTitle = styled.h1`
   top: 20%;
   text-align: center;
   transition: .5s;
-  @media ${device.tablet} {
+  @media ${mobile.tablet} {
     font-size: 40px;
   }
-  @media ${device.laptop} {
+  @media ${mobile.laptop} {
     font-size: 50px;
   }
-  @media ${device.laptopL} {
+  @media ${mobile.laptopL} {
     font-size: 60px;
   }
-  @media ${device.desktop} {
+  @media ${mobile.desktop} {
     font-size: 70px;
   }
   
@@ -157,3 +161,4 @@ const WeatherWrapper = styled.div`
 
   
 
+export default App;
