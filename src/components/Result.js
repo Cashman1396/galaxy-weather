@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloud, faBolt, faCloudRain, faCloudShowersHeavy, faSnowflake,
   faSun, faSmog, } from '@fortawesome/free-solid-svg-icons';
-
+import mobile from '../Responsive/Mobile'
 import styled from 'styled-components';
 import ForecastHour from './ForecastHour';
 import ResultFadeIn from './ResultFadeIn';
@@ -38,11 +38,11 @@ const CurrentWeatherWrap = styled.div`
   grid-template-columns: auto 1fr;
   margin: 20px 0;
   grid-gap: 30px;
-  @media ${device.mobileL} {
+  @media ${mobile.mobileL} {
     flex-basis: 50%;
     padding-right: 10px;
   }
-  @media ${device.tablet} {
+  @media ${mobile.tablet} {
     grid-template-columns: 1fr 1fr;
     padding-right: 20px;
   }
@@ -54,14 +54,14 @@ const WeatherIcon = styled.div`
   align-items: center;
   font-size: 70px;
   color: #ffffff;
-  @media ${device.tablet} {
+  @media ${mobile.tablet} {
     font-size: 100px;
     justify-content: flex-end;
   }
-  @media ${device.laptop} {
+  @media ${mobile.laptop} {
     font-size: 120px;
   }
-  @media ${device.laptopL} {
+  @media ${mobile.laptopL} {
     font-size: 140px;
   }
 `;

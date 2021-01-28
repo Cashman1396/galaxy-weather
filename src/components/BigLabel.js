@@ -15,13 +15,13 @@ color: ${({ color }) => color || '#FFFFFF'};
         text-transform: uppercase;
       }
       `}
-      @media ${device.tablet} {
+      @media ${mobile.tablet} {
         font-size: ${({ fontSize }) => fontSize || '37px'};
       }
-      @media ${device.laptop} {
+      @media ${mobile.laptop} {
         font-size: ${({ fontSize }) => fontSize || '43px'};
       } 
-      @media ${device.laptopL} {
+      @media ${mobile.laptopL} {
         font-size: ${({ fontSize }) => fontSize || '52px'};
       } 
     `;
