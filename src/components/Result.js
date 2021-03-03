@@ -65,3 +65,5 @@ const WeatherIcon = styled.div`
     font-size: 140px;
   }
 `;
+
+export default Result

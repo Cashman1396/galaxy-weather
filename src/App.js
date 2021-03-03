@@ -166,7 +166,7 @@ const WeatherWrapper = styled.div`
           {error && <NotFound error={error} />}
         </WeatherWrapper>
         </>
-      );
+      )
     }
     
   }
