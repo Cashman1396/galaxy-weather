@@ -41,4 +41,48 @@ box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06
   padding: 15px 20px 15px 45px;
   border-radius: 30px;
 }
-`
+`;
+
+const SearchIcon = styled.span`
+display: block;
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  transform: translate(-50%, -50%);
+  height: 14px;
+  width: 14px;
+  font-size: 14px;
+  color: #c5c5c5;
+  @media ${device.tablet} {
+    height: 15px;
+    width: 15px;
+    font-size: 15px;
+  }
+  @media ${device.laptop} {
+    height: 16px;
+    width: 16px;
+    font-size: 16px;
+  }
+`;
+
+const SearchCity = ({submit, value, change, showResult}) => {
+    return (
+        <>
+          <SearchBar showResult={showResult} onSubmit={submit}>
+              <SearchInput type="text" value={value} placeholder="Enter Location" onChange={change} />
+              <SearchIcon>
+                  <FontAwesomeIcon icon={faSearch} />
+              </SearchIcon>
+          </SearchBar>
+        </>
+    )
+};
+
+SearchCity.PropTypes = {
+    submit: PropTypes.func.isRequired,
+    value: PropTypes.func.isRequired,
+    change: PropTypes.func.isRequired,
+    showResult: PropTypes.func.isRequired,
+}
+
+export default SearchCity;
