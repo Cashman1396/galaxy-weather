@@ -153,8 +153,20 @@ const WeatherWrapper = styled.div`
     render() {
       const { value, weatherInfo, error} = this.setState;
       return (
-        <></>
-      )
+        <>
+        <AppTitle showLabel={(weatherInfo || error) && true}>Weather Live</AppTitle>
+        <WeatherWrapper>
+          <AppTitle secondary showResult={(weatherInfo || error) && true}>
+            Weather Live
+          </AppTitle>
+          <SearchCity value={value} showResult={(weatherInfo || error) && true}
+          change={this.handleInputChange}
+          submit={this.handleSearchCity} />
+          {weatherInfo && <Result weather={weatherInfo} />}
+          {error && <NotFound error={error} />}
+        </WeatherWrapper>
+        </>
+      );
     }
     
   }
