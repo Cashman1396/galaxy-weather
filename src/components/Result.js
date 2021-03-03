@@ -73,17 +73,86 @@ display: block;
   font-size: 50px;
   font-weight: 400;
   color: #ffffff;
-  @media ${device.tablet} {
+  @media ${mobile.tablet} {
     font-size: 70px;
   }
-  @media ${device.laptop} {
+  @media ${mobile.laptop} {
     font-size: 90px;
   }
-  @media ${device.laptopL} {
+  @media ${mobile.laptopL} {
     font-size: 110px;
   }
 `;
 
-const WeatherDetailsWrap
+const WeatherDetailsWrap = styled.div`
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  align-self: flex-start;
+  @media ${mobile.mobileL} {
+    flex-basis: 50%;
+  }
+`;
+
+const WeatherDetail = styled.div`
+flex-basis: calc(100% / 3);
+  padding: 10px;
+  @media ${mobile.laptop} {
+    padding: 20px 10px;
+  }
+`;
+
+
+const ForecastWrap = styled.div`
+  flex-basis: 100%;
+  margin: 20px 0;
+  overflow: hidden;
+`;
+
+const Forecast = styled.div`
+position: relative;
+display: flex;
+overflow-x: scroll;
+overflow-y: hidden;
+scrollbar-color: lightgray #ffffff;
+scrollbar-width: thin;
+margin-top: 20px;
+padding-bottom: 20px;
+@media ${mobile.laptop} {
+  order: 4;
+}
+`;
+
+const Result = ({ weather }) => {
+  const {
+    city,
+    country,
+    date, 
+    description,
+    main,
+    temp,
+    sunset,
+    sunrise,
+    humidity,
+    wind,
+    highestTemp,
+    lowestTemp,
+    forecast,
+  } = weather;
+
+  const forecasts = forecast.map(item => (
+    <ForecastHour key={item.dt}
+    temp={Math.floor(item.main.temp * 1) / 1}
+    icon={item.weather[0].icon}
+    month={item.dt_txt.slice(5, 7)}
+    day={item.dt_txt.slice(8, 10)}
+    hour={item.dt_txt.slice(11, 13) * 1}
+    />
+  ))
+}
 
 export default Result
