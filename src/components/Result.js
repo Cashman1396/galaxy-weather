@@ -66,4 +66,24 @@ const WeatherIcon = styled.div`
   }
 `;
 
+const TemperatureWrap = styled.div``;
+
+const Temperature = styled.h2`
+display: block;
+  font-size: 50px;
+  font-weight: 400;
+  color: #ffffff;
+  @media ${device.tablet} {
+    font-size: 70px;
+  }
+  @media ${device.laptop} {
+    font-size: 90px;
+  }
+  @media ${device.laptopL} {
+    font-size: 110px;
+  }
+`;
+
+const WeatherDetailsWrap
+
 export default Result
