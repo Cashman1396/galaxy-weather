@@ -26,3 +26,4 @@ const SmallLabel = styled.h4`
   }
 `;
 
+export default SmallLabel; 
