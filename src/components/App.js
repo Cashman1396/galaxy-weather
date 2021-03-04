@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import mobile from './Responsive/Mobile'
-import Result from './components/Result';
-import SearchCity from './components/SearchCity';
-import NotFound from './components/NotFound';
+import mobile from '../Responsive/Mobile'
+import Result from './Result';
+import SearchCity from './SearchCity';
+import NotFound from './NotFound';
 
 
 const AppTitle = styled.h1`
@@ -63,7 +63,7 @@ const WeatherWrapper = styled.div`
   position: relative;
 `;
 
-  class App extends Component {
+  class App extends React.Component {
     state = {
       value: '',
       weatherInfo: null,
@@ -78,6 +78,7 @@ const WeatherWrapper = styled.div`
 
     handleSearchCity = e => {
       e.preventDefault();
+      const { value } = this.state
       const APIkey = process.env.REACT_APP_API_KEY
       const weather = `https://api.openweathermap.org/data/2.5/weather?q=${value}&APPID=${APIkey}&units=metric`;
       const forecast = `https://api.openweathermap.org/data/2.5/forecast?q=${value}&APPID=${APIkey}&units=metric`;
@@ -115,7 +116,7 @@ const WeatherWrapper = styled.div`
             'Saturday'
           ]
           const currentDate = new Date();
-          const date = `${day[currentDate.getDate()]} ${currentDate.getDate()} ${months[currentDate.getMonth()]}`;
+          const date = `${days[currentDate.getDate()]} ${currentDate.getDate()} ${months[currentDate.getMonth()]}`;
           
           const sunset = new Date(data1.sys.sunset * 1000).toLocaleTimeString().slice(0,5)
           const sunrise = new Date(data1.sys.sunrise * 1000).toLocaleTimeString().slice(0,5)

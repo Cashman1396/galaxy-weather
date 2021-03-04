@@ -154,7 +154,7 @@ const Result = ({ weather }) => {
     />
   ));
 
-  let WeatherIcon = null;
+  let weatherIcon = null;
 
   if (main === 'Thunderstorm') {
     weatherIcon = <FontAwesomeIcon icon={faBolt} />;
@@ -172,7 +172,7 @@ const Result = ({ weather }) => {
     weatherIcon = <FontAwesomeIcon icon={faSmog} />;
   }
 
-  eturn (
+  return (
     <Results>
       <LocationWrap>
         <BigLabel>

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import mobile from '../responsive/Mobile';
+import mobile from '../Responsive/Mobile';
 
 const MediumLabel = styled.h3`
   color: ${({ color }) => color || '#FFFFFF'};

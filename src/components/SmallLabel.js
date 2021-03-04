@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import mobile from '../responsive/Mobile';
+import mobile from '../Responsive/Mobile';
 
 const SmallLabel = styled.h4`
   color: ${({ color }) => color || '#FFFFFF'};
