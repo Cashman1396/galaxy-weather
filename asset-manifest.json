@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Cashman1396/galaxy-weather/static/css/main.5f1113e9.chunk.css",
-    "main.js": "/Cashman1396/galaxy-weather/static/js/main.9d1dd717.chunk.js",
-    "main.js.map": "/Cashman1396/galaxy-weather/static/js/main.9d1dd717.chunk.js.map",
-    "runtime-main.js": "/Cashman1396/galaxy-weather/static/js/runtime-main.04ca6bf9.js",
-    "runtime-main.js.map": "/Cashman1396/galaxy-weather/static/js/runtime-main.04ca6bf9.js.map",
-    "static/js/2.f9e93e72.chunk.js": "/Cashman1396/galaxy-weather/static/js/2.f9e93e72.chunk.js",
-    "static/js/2.f9e93e72.chunk.js.map": "/Cashman1396/galaxy-weather/static/js/2.f9e93e72.chunk.js.map",
-    "index.html": "/Cashman1396/galaxy-weather/index.html",
-    "static/css/main.5f1113e9.chunk.css.map": "/Cashman1396/galaxy-weather/static/css/main.5f1113e9.chunk.css.map",
-    "static/js/2.f9e93e72.chunk.js.LICENSE.txt": "/Cashman1396/galaxy-weather/static/js/2.f9e93e72.chunk.js.LICENSE.txt",
-    "static/media/index.sass": "/Cashman1396/galaxy-weather/static/media/Blue-Mountain.ddc8f4f8.jpeg"
+    "main.css": "/galaxy-weather/static/css/main.23c1038f.chunk.css",
+    "main.js": "/galaxy-weather/static/js/main.9d1dd717.chunk.js",
+    "main.js.map": "/galaxy-weather/static/js/main.9d1dd717.chunk.js.map",
+    "runtime-main.js": "/galaxy-weather/static/js/runtime-main.3a2f49e2.js",
+    "runtime-main.js.map": "/galaxy-weather/static/js/runtime-main.3a2f49e2.js.map",
+    "static/js/2.df15181f.chunk.js": "/galaxy-weather/static/js/2.df15181f.chunk.js",
+    "static/js/2.df15181f.chunk.js.map": "/galaxy-weather/static/js/2.df15181f.chunk.js.map",
+    "index.html": "/galaxy-weather/index.html",
+    "static/css/main.23c1038f.chunk.css.map": "/galaxy-weather/static/css/main.23c1038f.chunk.css.map",
+    "static/js/2.df15181f.chunk.js.LICENSE.txt": "/galaxy-weather/static/js/2.df15181f.chunk.js.LICENSE.txt",
+    "static/media/index.sass": "/galaxy-weather/static/media/Blue-Mountain.ddc8f4f8.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.04ca6bf9.js",
-    "static/js/2.f9e93e72.chunk.js",
-    "static/css/main.5f1113e9.chunk.css",
+    "static/js/runtime-main.3a2f49e2.js",
+    "static/js/2.df15181f.chunk.js",
+    "static/css/main.23c1038f.chunk.css",
     "static/js/main.9d1dd717.chunk.js"
   ]
 }
