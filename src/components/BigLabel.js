@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import device from '../responsive/Device';
+import device from '../Responsive/Device';
 
 const BigLabel = styled.h2`
   color: ${({ color }) => color || '#FFFFFF'};
