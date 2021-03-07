@@ -194,7 +194,7 @@ const Result = ({ weather }) => {
           <SmallLabel align="center" weight="400">
             {Math.floor(highestTemp)}&#176;
           </SmallLabel>
-          <Text align="center">Hight</Text>
+          <Text align="center">High</Text>
         </WeatherDetail>
         <WeatherDetail>
           <SmallLabel align="center" weight="400">
